@@ -13,7 +13,7 @@
 }
 
 .benefits {
-  padding-top: 10px;
+  padding: 10px 0 0 10px;
   font-style: italic;
 }
 
@@ -57,6 +57,12 @@
     color: rgb(150, 86, 94);
     transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
   }
+}
+
+.project-item__box,
+.work-item__box,
+.education-item__box {
+  margin-left: 10px;
 }
 
 .work-item,
