@@ -1,29 +1,29 @@
 .sidebar {
   color: #fff;
-  padding: 20px 20px 20px 30px;
+  padding: 20px 0px 20px 0px;
   background-color: rgb(88, 92, 107);
   width: 25%;
+}
+
+.title-box {
+  width: 100%;
+  background-color: rgb(75, 80, 99);
 }
 
 .contacts-title,
 .softSkills-title,
 .techSkills-title,
 .languages-title {
-  padding: 10px 0;
-  text-shadow: 1px 1px 1px #fff;
+  margin: 0 20px 10px 30px;
 }
 
 .techSkills-title {
   padding-top: 0;
 }
 
-.contacts-item__tel {
-  margin-left: 5%;
-  margin-bottom: 10px;
-}
-
+.contacts-item__tel,
 .contacts-item__mail {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .fa-phone,
@@ -45,7 +45,7 @@
   font-weight: 600;
   color: #ffffff;
   margin-left: 10px;
-  line-height: 120%;
+  line-height: 185%;
 }
 
 .contacts-item_social {
@@ -79,11 +79,7 @@
 .languages-item {
   list-style-type: disc;
   color: #c48322;
-  margin-left: 5%;
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  margin: 0 0 10px 15%;
 }
 
 .techSkills-item_name,

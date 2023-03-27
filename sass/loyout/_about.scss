@@ -4,6 +4,14 @@
   padding: 80px 80px 20px 80px;
 }
 
+.photo {
+  width: calc(100% - 10px);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
 .main-titel {
   text-align: center;
   color: black;
@@ -23,7 +31,6 @@
   text-align: center;
   color: black;
   padding: 20px;
-  text-shadow: 1px 1px 1px rgb(58, 56, 56);
 
 }
 
@@ -39,13 +46,13 @@
 .project-item_titel,
 .project-item_link {
   text-decoration: none;
-  color: #4B0082;
+  color: #B8860B;
   font-size: 18px;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 
   &:hover {
-    color: rgb(114, 86, 150);
+    color: rgb(218, 54, 54);
     transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
   }
 }
@@ -65,8 +72,19 @@
   padding: 10px 0;
 }
 
+.description-item {
+  list-style-type: disc;
+  color: #c48322;
+  margin-left: 15px;
+
+  &__text {
+    color: black;
+  }
+}
+
 .work-item_title,
 .education-item_title {
+  font-size: 18px;
   font-family: 'Roboto Slab', serif;
   color: rgb(102, 47, 8);
   font-weight: 600;

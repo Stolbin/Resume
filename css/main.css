@@ -133,30 +133,30 @@ body {
 
 .sidebar {
   color: #fff;
-  padding: 20px 20px 20px 30px;
+  padding: 20px 0px 20px 0px;
   background-color: rgb(88, 92, 107);
   width: 25%;
+}
+
+.title-box {
+  width: 100%;
+  background-color: rgb(75, 80, 99);
 }
 
 .contacts-title,
 .softSkills-title,
 .techSkills-title,
 .languages-title {
-  padding: 10px 0;
-  text-shadow: 1px 1px 1px #fff;
+  margin: 0 20px 10px 30px;
 }
 
 .techSkills-title {
   padding-top: 0;
 }
 
-.contacts-item__tel {
-  margin-left: 5%;
-  margin-bottom: 10px;
-}
-
+.contacts-item__tel,
 .contacts-item__mail {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 .fa-phone,
@@ -179,7 +179,7 @@ body {
   font-weight: 600;
   color: #ffffff;
   margin-left: 10px;
-  line-height: 120%;
+  line-height: 185%;
 }
 
 .contacts-item_social {
@@ -212,12 +212,7 @@ body {
 .languages-item {
   list-style-type: disc;
   color: #c48322;
-  margin-left: 5%;
-}
-.techSkills-item:not(:last-child),
-.softSkills-item:not(:last-child),
-.languages-item:not(:last-child) {
-  margin-bottom: 10px;
+  margin: 0 0 10px 15%;
 }
 
 .techSkills-item_name,
@@ -232,6 +227,14 @@ body {
   width: 75%;
   background-color: #d4e1e1;
   padding: 80px 80px 20px 80px;
+}
+
+.photo {
+  width: calc(100% - 10px);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .main-titel {
@@ -253,7 +256,6 @@ body {
   text-align: center;
   color: black;
   padding: 20px;
-  text-shadow: 1px 1px 1px rgb(58, 56, 56);
 }
 
 .project-item {
@@ -268,14 +270,14 @@ body {
 .project-item_titel,
 .project-item_link {
   text-decoration: none;
-  color: #4B0082;
+  color: #B8860B;
   font-size: 18px;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 }
 .project-item_titel:hover,
 .project-item_link:hover {
-  color: rgb(114, 86, 150);
+  color: rgb(218, 54, 54);
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 }
 
@@ -293,8 +295,18 @@ body {
   padding: 10px 0;
 }
 
+.description-item {
+  list-style-type: disc;
+  color: #c48322;
+  margin-left: 15px;
+}
+.description-item__text {
+  color: black;
+}
+
 .work-item_title,
 .education-item_title {
+  font-size: 18px;
   font-family: "Roboto Slab", serif;
   color: rgb(102, 47, 8);
   font-weight: 600;
