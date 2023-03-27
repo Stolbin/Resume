@@ -1,0 +1,22 @@
+.contacts-title,
+.softSkills-title,
+.techSkills-title,
+.languages-title,
+.main-titel,
+.project_title,
+.work_title,
+.education-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+
+  @include table {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  @include desktop {
+    font-size: 28px;
+  }
+}

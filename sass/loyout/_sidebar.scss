@@ -1,0 +1,96 @@
+.sidebar {
+  color: #fff;
+  padding: 20px 20px 20px 30px;
+  background-color: rgb(88, 92, 107);
+  width: 25%;
+}
+
+.contacts-title,
+.softSkills-title,
+.techSkills-title,
+.languages-title {
+  padding: 10px 0;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.techSkills-title {
+  padding-top: 0;
+}
+
+.contacts-item__tel {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.contacts-item__mail {
+  margin-left: 5%;
+}
+
+.fa-phone,
+.fa-envelope {
+  color: #ffffff;
+  transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+
+  &:hover,
+  :focus {
+    color: #c48322;
+    transform: scale(1.2, 1.1);
+    transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+  }
+}
+
+.contacts-item_link__tel,
+.contacts-item_link__mail {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 10px;
+  line-height: 120%;
+}
+
+.contacts-item_social {
+  margin: 20px 0 20px 20px;
+  display: flex;
+  justify-content: baseline;
+  align-content: center;
+  flex-direction: row;
+  gap: 25px;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  fill: #c48322;
+  transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+
+  &:hover,
+  :focus {
+    transform: scale(1.2, 1.1);
+    fill: #b69c82;
+    transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+  }
+}
+
+.techSkills-item,
+.softSkills-item,
+.languages-item {
+  list-style-type: disc;
+  color: #c48322;
+  margin-left: 5%;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.techSkills-item_name,
+.softSkills-item_name,
+.languages-item_name {
+  font-size: 16px;
+  line-height: 90%;
+  color: #fff;
+
+}

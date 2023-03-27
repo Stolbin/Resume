@@ -1,0 +1,88 @@
+.about {
+  width: 75%;
+  background-color: #d4e1e1;
+  padding: 80px 80px 20px 80px;
+}
+
+.main-titel {
+  text-align: center;
+  color: black;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.benefits {
+  padding-top: 10px;
+  font-style: italic;
+}
+
+.project_title,
+.work_title,
+.education-title {
+  text-align: center;
+  color: black;
+  padding: 20px;
+  text-shadow: 1px 1px 1px rgb(58, 56, 56);
+
+}
+
+.project-item {
+  margin-top: 10px;
+}
+
+.project-item_lang {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.project-item_titel,
+.project-item_link {
+  text-decoration: none;
+  color: #4B0082;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+
+  &:hover {
+    color: rgb(114, 86, 150);
+    transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+  }
+}
+
+.project-item_link {
+  color: #5e052a;
+  transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+
+  &:hover {
+    color: rgb(150, 86, 94);
+    transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+  }
+}
+
+.work-item,
+.education-item {
+  padding: 10px 0;
+}
+
+.work-item_title,
+.education-item_title {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(102, 47, 8);
+  font-weight: 600;
+
+}
+
+.work-item_description,
+.education-item_speciality {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.work-item_date,
+.education-item_date {
+  color: rgb(133, 126, 126);
+  font-size: 14px;
+  font-weight: 600;
+}
