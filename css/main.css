@@ -1,5 +1,5 @@
 body {
-  background-color: #e0d0d0;
+  background-color: #A9A9A9;
   padding: 30px;
 }
 
@@ -212,7 +212,7 @@ body {
 .languages-item {
   list-style-type: disc;
   color: #c48322;
-  margin: 0 0 10px 15%;
+  margin: 0 0 10px 20%;
 }
 
 .techSkills-item_name,
