@@ -14,11 +14,20 @@
 .softSkills-title,
 .techSkills-title,
 .languages-title {
-  margin: 0 20px 10px 30px;
+  margin: 20px 20px 20px 30px;
 }
 
 .techSkills-title {
   padding-top: 0;
+}
+
+.photo {
+  width: calc(100% - 40px);
+  height: auto;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .contacts-item__tel,
@@ -44,18 +53,17 @@
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
-  margin-left: 10px;
+  margin-left: 20px;
   line-height: 185%;
 }
 
 .contacts-item_social {
-  margin: 20px 0 20px 20px;
+  margin: 20px 0 20px 0;
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
   align-content: center;
   flex-direction: row;
   gap: 25px;
-  padding-top: 10px;
   list-style: none;
 }
 
@@ -88,5 +96,4 @@
   font-size: 16px;
   line-height: 90%;
   color: #fff;
-
 }
