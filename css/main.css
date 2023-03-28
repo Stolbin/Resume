@@ -143,6 +143,12 @@ body {
   background-color: rgb(75, 80, 99);
 }
 
+.box {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts-title,
 .softSkills-title,
 .techSkills-title,
@@ -225,10 +231,15 @@ body {
 
 .techSkills-item_name,
 .softSkills-item_name,
-.languages-item_name {
+.languages-item_name,
+.box-tex {
   font-size: 16px;
   line-height: 90%;
   color: #fff;
+}
+
+.box-tex {
+  font-weight: 600;
 }
 
 .about {
