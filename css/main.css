@@ -276,16 +276,23 @@ body {
   margin-top: 10px;
 }
 
+.project-item__box-link {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 .project-item_lang {
   font-size: 14px;
-  margin-top: 5px;
 }
 
 .project-item_titel,
 .project-item_link {
   text-decoration: none;
   color: #B8860B;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 }
@@ -296,6 +303,7 @@ body {
 }
 
 .project-item_link {
+  font-size: 16px;
   color: #5e052a;
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 }
@@ -304,7 +312,7 @@ body {
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 }
 
-.project-item__box,
+.project-item__box-text,
 .work-item__box,
 .education-item__box {
   margin-left: 10px;
