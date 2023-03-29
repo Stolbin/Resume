@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #A9A9A9;
   padding: 30px;
@@ -343,4 +344,8 @@ body {
   color: rgb(133, 126, 126);
   font-size: 14px;
   font-weight: 600;
+}
+
+.work-item__сonclusion {
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */
