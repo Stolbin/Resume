@@ -38,12 +38,13 @@
 
 .contacts-item__tel,
 .contacts-item__mail {
-  margin-left: 10%;
+  margin-left: 3%;
 }
 
 .fa-phone,
 .fa-envelope {
   color: #ffffff;
+  margin-right: 30px;
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 
   &:hover,
@@ -106,5 +107,7 @@
 }
 
 .box-tex {
+  font-size: 20px;
   font-weight: 600;
+  margin-top: 5px;
 }
