@@ -45,7 +45,7 @@ address {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .visually-hidden {
@@ -288,9 +288,10 @@ body {
 .project-item__box-link {
   width: 53%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 4px;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .project-item_lang {
@@ -312,8 +313,11 @@ body {
 }
 
 .project-item_link {
-  font-size: 16px;
-  color: #5e052a;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #373536;
+  text-shadow: 1px 1px 1px #786b58;
   transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
 }
 .project-item_link:hover {
