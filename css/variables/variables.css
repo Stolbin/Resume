@@ -1,0 +1,22 @@
+:root {
+  --main-bg-color: #a9a9a9;
+  --container-bg: antiquewhite;
+  --sidebar-bg: rgb(88, 92, 107);
+  --title-box-bg: rgb(75, 80, 99);
+  --about-bg: #d4e1e1;
+
+  --accent-gold: #c48322;
+  --hover-accent-grey: #b69c82;
+  --titel-project-color: #b8860b;
+  --titel-project-hover: rgb(218, 54, 54);
+  --item-project-color: #373536;
+  --item-project-hover: rgb(150, 86, 94);
+  --white: #ffffff;
+  --black: #000000;
+
+  --font-main: "Roboto", sans-serif;
+  --font-titles: "Poppins", sans-serif;
+  --font-special: "Roboto Slab", serif;
+
+  --transition: all 0.4s cubic-bezier(0.42, 0, 1, 1);
+}

@@ -1,0 +1,113 @@
+.sidebar {
+  color: var(--white);
+  padding: 20px 0px 20px 0px;
+  background-color: var(--sidebar-bg);
+  width: 25%;
+}
+
+.title-box {
+  width: 100%;
+  background-color: var(--title-box-bg);
+}
+
+.contacts-title,
+.softSkills-title,
+.techSkills-title,
+.languages-title {
+  margin: 20px 20px 20px 30px;
+}
+
+.techSkills-title {
+  padding-top: 0;
+}
+
+.photo {
+  width: calc(100% - 40px);
+  height: auto;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.location {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contacts-item__tel,
+.contacts-item__mail {
+  margin-left: 3%;
+}
+
+.fa-phone,
+.fa-envelope {
+  color: var(--white);
+  margin-right: 30px;
+  transition: var(--transition);
+
+  &:hover,
+  :focus {
+    color: var(--accent-gold);
+    transform: scale(1.2, 1.1);
+    transition: var(--transition);
+  }
+}
+
+.contacts-item_link__tel,
+.contacts-item_link__mail {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  margin-left: 20px;
+  line-height: 185%;
+}
+
+.contacts-item_social {
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  fill: var(--accent-gold);
+  transition: var(--transition);
+
+  &:hover,
+  :focus {
+    transform: scale(1.2, 1.1);
+    fill: var(--hover-accent-grey);
+    transition: var(--transition);
+  }
+}
+
+.techSkills-item,
+.softSkills-item,
+.languages-item {
+  list-style-type: disc;
+  color: var(--accent-gold);
+  margin: 0 0 10px 20%;
+}
+
+.techSkills-item_name,
+.softSkills-item_name,
+.languages-item_name,
+.box-tex {
+  font-size: 16px;
+  line-height: 90%;
+  color: var(--white);
+}
+
+.box-tex {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 5px;
+}

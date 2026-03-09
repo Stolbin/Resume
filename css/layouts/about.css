@@ -1,0 +1,122 @@
+.about {
+  width: 75%;
+  background-color: var(--about-bg);
+  padding: 80px 80px 20px 80px;
+}
+
+.main-title {
+  text-align: center;
+  color: var(--black);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.speciality_title {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.benefits {
+  padding: 10px 0 0 10px;
+  font-style: italic;
+}
+
+.summary_title,
+.project_title,
+.work_title,
+.education-title {
+  text-align: center;
+  color: var(--black);
+  padding: 20px;
+}
+
+.project-item {
+  margin-top: 10px;
+}
+
+.project-item__box-link {
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.project-item_lang {
+  font-size: 14px;
+}
+
+.project-item_titel,
+.project-item_link {
+  text-decoration: none;
+  color: var(--titel-project-color);
+  font-size: 20px;
+  font-weight: 600;
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--titel-project-hover);
+    transition: var(--transition);
+  }
+}
+
+.project-item_link {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--item-project-color);
+  text-shadow: 1px 1px 1px #786b58;
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--item-project-hover);
+    transition: var(--transition);
+  }
+}
+
+.project-item__box-text,
+.work-item__box,
+.education-item__box {
+  margin-left: 10px;
+}
+
+.work-item,
+.education-item {
+  padding: 10px 0;
+}
+
+.description-item {
+  list-style-type: disc;
+  color: #c48322;
+  margin-left: 15px;
+
+  &__text {
+    color: var(--black);
+  }
+}
+
+.work-item_title,
+.education-item_title {
+  font-size: 18px;
+  color: rgb(102, 47, 8);
+  font-weight: 600;
+}
+
+.work-item_description,
+.education-item_speciality {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.work-item_date,
+.education-item_date {
+  color: rgb(133, 126, 126);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.work-item__experience {
+  margin-top: 10px;
+}
