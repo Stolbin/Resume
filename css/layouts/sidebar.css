@@ -28,6 +28,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  transition: var(--transition);
+  &:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
 }
 
 .location {
@@ -46,12 +51,10 @@
   color: var(--white);
   margin-right: 30px;
   transition: var(--transition);
-
   &:hover,
   :focus {
     color: var(--accent-gold);
     transform: scale(1.2, 1.1);
-    transition: var(--transition);
   }
 }
 
@@ -80,12 +83,10 @@
   font-size: 30px;
   fill: var(--accent-gold);
   transition: var(--transition);
-
   &:hover,
   :focus {
     transform: scale(1.2, 1.1);
     fill: var(--hover-accent-grey);
-    transition: var(--transition);
   }
 }
 

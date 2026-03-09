@@ -50,16 +50,26 @@
 
 .project-item_titel,
 .project-item_link {
+  display: inline-block;
   text-decoration: none;
   color: var(--titel-project-color);
   font-size: 20px;
   font-weight: 600;
-  transition: var(--transition);
-
+  transform-origin: left;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform, color;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, color 0.3s ease-in-out;
   &:hover {
     color: var(--titel-project-hover);
-    transition: var(--transition);
   }
+}
+
+.project-item_titel:hover {
+  transform: scale(1.03) translateZ(0);
+  -webkit-transform: scale(1.03) translateZ(0);
 }
 
 .project-item_link {
@@ -69,11 +79,23 @@
   color: var(--item-project-color);
   text-shadow: 1px 1px 1px #786b58;
   transition: var(--transition);
-
   &:hover {
     color: var(--item-project-hover);
-    transition: var(--transition);
   }
+}
+
+.project-item_link_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon_code {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  fill: var(--black);
 }
 
 .project-item__box-text,
