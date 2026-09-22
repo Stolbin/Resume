@@ -1,7 +1,12 @@
 .about {
-  width: 75%;
+  width: 100%;
   background-color: var(--about-bg);
-  padding: 80px 80px 20px 80px;
+  padding: 30px 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 75%;
+    padding: 80px 80px 20px 80px;
+  }
 }
 
 .main-title {
@@ -31,45 +36,42 @@
   padding: 20px;
 }
 
-.project-item {
-  margin-top: 10px;
+.project-item,
+.work-item,
+.education-item {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .project-item__box-link {
-  width: 53%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   align-items: baseline;
   justify-content: flex-start;
 }
 
 .project-item_lang {
   font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-gold);
 }
 
-.project-item_titel,
-.project-item_link {
+.project-item_titel {
   display: inline-block;
   text-decoration: none;
   color: var(--titel-project-color);
   font-size: 20px;
   font-weight: 600;
-  transform-origin: left;
-  -webkit-font-smoothing: antialiased;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  will-change: transform, color;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: color var(--transition);
+
   &:hover {
     color: var(--titel-project-hover);
   }
-}
-
-.project-item_titel:hover {
-  transform: scale(1.03) translateZ(0);
-  -webkit-transform: scale(1.03) translateZ(0);
 }
 
 .project-item_link {
@@ -78,9 +80,30 @@
   letter-spacing: 2px;
   color: var(--item-project-color);
   text-shadow: 1px 1px 1px #786b58;
-  transition: var(--transition);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--item-project-hover);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
   &:hover {
     color: var(--item-project-hover);
+
+    &::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
 }
 
@@ -104,15 +127,11 @@
   margin-left: 10px;
 }
 
-.work-item,
-.education-item {
-  padding: 10px 0;
-}
-
 .description-item {
   list-style-type: disc;
   color: #c48322;
   margin-left: 15px;
+  margin-top: 5px;
 
   &__text {
     color: var(--black);
@@ -130,6 +149,7 @@
 .education-item_speciality {
   font-size: 18px;
   font-weight: 500;
+  margin-top: 2px;
 }
 
 .work-item_date,
@@ -137,6 +157,7 @@
   color: rgb(133, 126, 126);
   font-size: 14px;
   font-weight: 600;
+  margin-top: 2px;
 }
 
 .work-item__experience {

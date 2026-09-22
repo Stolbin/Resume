@@ -28,15 +28,20 @@
 }
 
 .photo {
+  display: block;
   width: calc(100% - 40px);
   height: auto;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+
   &:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
 }
@@ -56,11 +61,12 @@
 .fa-envelope {
   color: var(--white);
   margin-right: 30px;
-  transition: var(--transition);
+  transition: color 0.3s ease, transform 0.3s ease;
+
   &:hover,
   &:focus {
     color: var(--accent-gold);
-    transform: scale(1.2, 1.1);
+    transform: scale(1.15);
   }
 }
 
@@ -88,11 +94,12 @@
   height: 30px;
   font-size: 30px;
   fill: var(--accent-gold);
-  transition: var(--transition);
+  transition: fill 0.3s ease, transform 0.3s ease;
+
   &:hover,
   &:focus {
-    transform: scale(1.2, 1.1);
-    fill: var(--hover-accent-grey);
+    transform: translateY(-3px) scale(1.1);
+    fill: var(--white);
   }
 }
 
@@ -109,7 +116,7 @@
 .languages-item_name,
 .box-tex {
   font-size: 16px;
-  line-height: 120%;
+  line-height: 140%;
   color: var(--white);
 }
 
