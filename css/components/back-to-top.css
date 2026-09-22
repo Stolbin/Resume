@@ -14,12 +14,10 @@
   justify-content: center;
   font-size: 18px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-
   opacity: 0;
   visibility: hidden;
-
-  transition: background-color var(--transition), transform var(--transition),
-    opacity 0.3s ease, visibility 0.3s ease;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out,
+    opacity 0.3s ease-out, visibility 0.3s ease-out;
 }
 
 .back-to-top.is-visible {
@@ -30,7 +28,6 @@
 .back-to-top:hover,
 .back-to-top:focus {
   background-color: var(--titel-project-hover);
-  transform: scale(1.1);
 }
 
 @media screen and (max-width: 767px) {
