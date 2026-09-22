@@ -2,7 +2,13 @@
   color: var(--white);
   padding: 20px 0px 20px 0px;
   background-color: var(--sidebar-bg);
-  width: 25%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 25%;
+  }
 }
 
 .title-box {
@@ -52,7 +58,7 @@
   margin-right: 30px;
   transition: var(--transition);
   &:hover,
-  :focus {
+  &:focus {
     color: var(--accent-gold);
     transform: scale(1.2, 1.1);
   }
@@ -84,7 +90,7 @@
   fill: var(--accent-gold);
   transition: var(--transition);
   &:hover,
-  :focus {
+  &:focus {
     transform: scale(1.2, 1.1);
     fill: var(--hover-accent-grey);
   }
@@ -103,7 +109,7 @@
 .languages-item_name,
 .box-tex {
   font-size: 16px;
-  line-height: 90%;
+  line-height: 120%;
   color: var(--white);
 }
 
